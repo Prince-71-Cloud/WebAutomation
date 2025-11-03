@@ -1,0 +1,22 @@
+{
+  "name": "webautomation",
+  "version": "1.0.0",
+  "description": "This is an automation testing project with playwright (JavaScript)",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prince-71-Cloud/WebAutomation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prince-71-Cloud/WebAutomation/issues"
+  },
+  "homepage": "https://github.com/Prince-71-Cloud/WebAutomation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0"
+  }
+}
