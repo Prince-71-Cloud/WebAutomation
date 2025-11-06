@@ -26,6 +26,7 @@ test.describe.serial("Home page Elements visibility", () => {
     await page.goto(BASE_URL);
   });
 
+
   test("Navbar functionalities", async () => {
     const navbar = page.getByTestId("navbar-aiaxio"); 
     await expect(navbar).toBeVisible();
@@ -71,7 +72,9 @@ test.describe.serial("Home page Elements visibility", () => {
     await expect(navbarSignIn).toHaveAccessibleName("Sign In");
     await navbarSignIn.click();
     await page.waitForLoadState('networkidle');
-    await expect(page).toHaveURL(`${BASE_URL}/signin/`); // Reset to home for next tests
+    await expect(page).toHaveURL(`${BASE_URL}/signin/`); 
+    
+    // Reset to home for next tests
     await page.goto(BASE_URL);
     await page.waitForLoadState('networkidle');
 
